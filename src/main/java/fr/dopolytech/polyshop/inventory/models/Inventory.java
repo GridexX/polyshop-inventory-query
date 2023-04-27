@@ -13,16 +13,13 @@ public class Inventory {
 
   public String productId;
 
-  public double price;
-
   public long quantity;
 
   public Inventory() {
   }
 
-  public Inventory(String productId, double price, long quantity) {
+  public Inventory(String productId, long quantity) {
     this.productId = productId;
-    this.price = price;
     this.quantity = quantity;
   }
 }
