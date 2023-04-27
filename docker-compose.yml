@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15.2
+    container_name: postgres_inventory
+    expose:
+      - "5432"
+    # ports:
+    #   - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: inventory
+    networks:
+      - internal
+    volumes:
+      - postgres_inventory:/var/lib/postgresql/data
+
+  inventory:
+    image: maven:3.9-amazoncorretto-19
+    container_name: inventory
+    volumes:
+      - .:/app
+      - maven-repo:/root/.m2
+    working_dir: /app
+    command: mvn spring-boot:run
+    environment:
+      - EUREKA_HOST=discovery-server
+    networks:
+      - spring_microservices
+      - internal
+
+volumes:
+  maven-repo:
+  postgres_inventory:
+
+networks:
+  internal:
+  spring_microservices:
+    external: true

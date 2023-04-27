@@ -1,0 +1,4 @@
+Uri: copilot:GitHub%20Copilot?%5B%22file%3A%2F%2F%2Fhome%2Fgridexx%2FDocuments%2FCours%2FSpring%2FMicro-services%20new%2Finventory%2Fsrc%2Fmain%2Fjava%2Ffr%2Fdopolytech%2Fpolyshop%2Finventory%2Fconfigs%2FRabbitMqConfig.java%22%2C%7B%22prependToCompletion%22%3A%22%22%2C%22appendToCompletion%22%3A%22%22%2C%22indentation%22%3Anull%2C%22completionType%22%3A2%2C%22insertPosition%22%3A%7B%22line%22%3A21%2C%22character%22%3A32%7D%7D%2C%22%22%5D#0
+
+Error message: Provider "copilot" not installed
+Error: java.nio.file.FileSystemNotFoundException: Provider "copilot" not installed
