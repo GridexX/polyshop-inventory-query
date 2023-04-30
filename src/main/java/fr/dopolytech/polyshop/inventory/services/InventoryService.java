@@ -11,9 +11,12 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
 import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
 import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
 import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
 import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
 import fr.dopolytech.polyshop.inventory.messages.ProductItem;
 import fr.dopolytech.polyshop.inventory.models.Inventory;
@@ -26,6 +29,7 @@ public class InventoryService {
 
   private final RabbitTemplate rabbitTemplate;
   private final Queue inventoryCancelQueue;
+  private final Queue inventoryConfirmedQueue;
   private final Queue paymentQueue;
   private final InventoryRepository inventoryRepository;
 
@@ -33,33 +37,50 @@ public class InventoryService {
   private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
 
   @Autowired
-  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue paymentQueue,
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
       InventoryRepository inventoryRepository) {
     this.rabbitTemplate = rabbitTemplate;
     this.inventoryCancelQueue = inventoryCancelQueue;
+    this.inventoryConfirmedQueue = inventoryConfirmedQueue;
     this.paymentQueue = paymentQueue;
     this.inventoryRepository = inventoryRepository;
   }
 
-  public List<Inventory> findAll() {
-    return inventoryRepository.findAll();
+  public List<InventoryDto> findAll() {
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+    // convert to dto
+
   }
 
-  public Inventory findInventoryByProductId(String productId) {
+  public InventoryDto findInventoryByProductId(String productId) {
     Inventory inv = inventoryRepository.findByProductId(productId);
-    return inv;
+    if(inv == null) {
+      return null;
+    }
+    return new InventoryDto(inv);
   }
 
-  public Inventory save(Inventory inventory) {
-    return inventoryRepository.save(inventory);
+  public InventoryDto save(InventoryDto inventory) {
+    inventoryRepository.save(new Inventory(inventory));
+    return inventory;
+  }
+
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+    Inventory inv = inventoryRepository.findByProductId(id);
+    if(inv == null) {
+      return null;
+    }
+    inv.quantity = inventory.quantity;
+    inventoryRepository.save(inv);
+    return new InventoryDto(inv);
   }
 
   public void deleteByProductId(String productId) {
     inventoryRepository.deleteByProductId(productId);
   }
 
-  public void receiveMessage(byte[] message) {
-    String messageBody = new String(message);
+  public void receiveMessage(String messageBody) {
+    // String messageBody = new String(message);
     logger.info("Received message from order queue: " + messageBody);
     try {
       ObjectMapper mapper = new ObjectMapper();
@@ -77,7 +98,7 @@ public class InventoryService {
 
         ErrorMessage errorMessage = null;
 
-        if (optionalInventory != null ) {
+        if (optionalInventory != null) {
           Inventory inventory = optionalInventory;
           logger.info("Inventory entry found : " + inventory.toString());
 
@@ -101,7 +122,7 @@ public class InventoryService {
 
             // Quantity insufficient
             errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
-                "Quantity is not sufficient : " + quantity, inventoryMessage.orderId);
+                "Quantity is not sufficient : " + quantity, inventoryMessage.orderId, inventoryMessage.products);
 
             logger.error("Quantity is not sufficient : " + quantity);
           }
@@ -110,13 +131,19 @@ public class InventoryService {
 
           // Product not found
           errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
-              inventoryMessage.orderId);
+              inventoryMessage.orderId, inventoryMessage.products);
           logger.error("Product id not found : " + product.productId);
         }
 
         if (errorMessage != null) {
           String errorMessageString = mapper.writeValueAsString(inventoryMessage);
+          logger.error("Send message to inventory cancel queue : " + errorMessageString);
           rabbitTemplate.convertAndSend(inventoryCancelQueue.getName(), errorMessageString);
+        } else {
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          String messageConfirmedString = mapper.writeValueAsString(inventoryConfirmedMessage);
+          logger.info("Send a message to the inventory confirmed queue" );
+          rabbitTemplate.convertAndSend(inventoryConfirmedQueue.getName(), messageConfirmedString);
         }
 
       }

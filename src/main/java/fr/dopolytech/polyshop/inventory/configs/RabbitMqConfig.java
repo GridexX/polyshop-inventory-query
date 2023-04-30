@@ -27,6 +27,12 @@ public class RabbitMqConfig {
     return new Queue("inventory_cancel", false);
   }
 
+  // Queue used to send commands confirmed commands to the order service
+  @Bean
+  public Queue inventoryConfirmedQueue() {
+    return new Queue("inventory_confirmed", false);
+  }
+
   // Queue used to send commands to the payment service
   @Bean
   public Queue paymentQueue() {

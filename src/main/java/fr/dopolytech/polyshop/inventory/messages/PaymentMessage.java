@@ -1,12 +1,12 @@
 package fr.dopolytech.polyshop.inventory.messages;
 
 public class PaymentMessage {
-  public String orderId;
+  public long orderId;
 
   public PaymentMessage() {
   }
 
-  public PaymentMessage(String orderId) {
+  public PaymentMessage(long orderId) {
     this.orderId = orderId;
   }
 
