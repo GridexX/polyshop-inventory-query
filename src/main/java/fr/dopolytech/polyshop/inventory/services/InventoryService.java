@@ -113,7 +113,7 @@ public class InventoryService {
 
             // Send message to payment queue
 
-            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId);
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
             String paymentMessageString = mapper.writeValueAsString(paymentMessage);
             logger.info("Send message to payment queue : " + paymentMessageString);
             rabbitTemplate.convertAndSend(paymentQueue.getName(), paymentMessageString);
@@ -144,6 +144,12 @@ public class InventoryService {
           String messageConfirmedString = mapper.writeValueAsString(inventoryConfirmedMessage);
           logger.info("Send a message to the inventory confirmed queue" );
           rabbitTemplate.convertAndSend(inventoryConfirmedQueue.getName(), messageConfirmedString);
+
+          // Send message to payment queue
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          String paymentMessageString = mapper.writeValueAsString(paymentMessage);
+          logger.info("Send message to payment queue : " + paymentMessageString);
+          rabbitTemplate.convertAndSend(paymentQueue.getName(), paymentMessageString);
         }
 
       }
@@ -151,6 +157,30 @@ public class InventoryService {
     } catch (Exception e) {
       logger.error(messageBody, e);
     }
+  }
+
+  // Receive message from payment service
+  public void receiveMessageCancel(String message) {
+    logger.info("Received message from payment cancel queue: " + message);
+
+    // It should readd the quantity to the inventory
+    ObjectMapper mapper = new ObjectMapper();
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+
+    errorMessage.products.forEach(product -> {
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      if (inventory != null) {
+        inventory.quantity += product.amount;
+        logger.info("Inventory entry found Added quantity: " + inventory.toString());
+        inventoryRepository.save(inventory);
+      } else {
+        // This should never happen because the inventory should be checked before
+        logger.error("Product id not found : " + product.productId);
+      }
+    });
+    
+    // Just transmit the message to the inventory cancel queue
+    rabbitTemplate.convertAndSend(inventoryCancelQueue.getName(), message);
   }
 
 }

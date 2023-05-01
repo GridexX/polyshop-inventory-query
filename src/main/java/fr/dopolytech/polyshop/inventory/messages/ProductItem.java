@@ -1,5 +1,8 @@
 package fr.dopolytech.polyshop.inventory.messages;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class ProductItem {
   public String productId;
   public long amount;

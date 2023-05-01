@@ -39,6 +39,12 @@ public class RabbitMqConfig {
     return new Queue("payment", false);
   }
 
+  // Queue used to listen cancel commands from the payment service
+  @Bean
+  public Queue paymentCancelQueue() {
+    return new Queue("payment_cancel", false);
+  }
+
   @Bean
   public MessageListenerAdapter listenerAdapter(InventoryService inventoryService) {
     return new MessageListenerAdapter(inventoryService, "receiveMessage");
@@ -51,6 +57,21 @@ public class RabbitMqConfig {
     container.setConnectionFactory(connectionFactory);
     container.setQueueNames("inventory");
     container.setMessageListener(listenerAdapter);
+    return container;
+  }
+
+  @Bean
+  public MessageListenerAdapter listenerAdapterCancel(InventoryService inventoryService) {
+    return new MessageListenerAdapter(inventoryService, "receiveMessageCancel");
+  }
+
+  @Bean
+  public SimpleMessageListenerContainer containerCancel(ConnectionFactory connectionFactory,
+      MessageListenerAdapter listenerAdapterCancel) {
+    SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
+    container.setConnectionFactory(connectionFactory);
+    container.setQueueNames("payment_cancel");
+    container.setMessageListener(listenerAdapterCancel);
     return container;
   }
 }
