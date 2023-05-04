@@ -68,7 +68,8 @@ public class InventoryService {
   public InventoryDto update(String id, PutInventoryDto inventory) {
     Inventory inv = inventoryRepository.findByProductId(id);
     if(inv == null) {
-      return null;
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+      return new InventoryDto(inv);
     }
     inv.quantity = inventory.quantity;
     inventoryRepository.save(inv);

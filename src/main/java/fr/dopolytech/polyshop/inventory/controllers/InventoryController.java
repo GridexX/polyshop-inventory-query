@@ -53,9 +53,6 @@ public class InventoryController {
   @PutMapping(value = "/{id}", consumes = "application/json")
   public ResponseEntity<InventoryDto> updateInventory(@PathVariable("id") String id, @RequestBody PutInventoryDto putInventoryDto) {
     InventoryDto inv = inventoryService.update(id, putInventoryDto);
-    if(inv == null) {
-      return ResponseEntity.notFound().build();
-    }
     return ResponseEntity.ok(inv);
   }
 

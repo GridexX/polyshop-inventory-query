@@ -7,11 +7,11 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class ErrorMessage {
-  String errorStatus;
-  String message;
-  String source;
-  long orderId;
-  List<ProductItem> products;
+  public String errorStatus;
+  public String message;
+  public String source;
+  public long orderId;
+  public List<ProductItem> products;
 
   public ErrorMessage(String errorStatus, String message, long orderId, List<ProductItem> products) {
     this.errorStatus = errorStatus;
