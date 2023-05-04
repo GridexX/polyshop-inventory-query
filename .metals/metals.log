@@ -19357,3 +19357,2529 @@ Caused by: java.lang.NullPointerException
 	at com.sun.tools.javac.Main.compile(Main.java:56)
 	at com.sun.tools.javac.Main.main(Main.java:42)
 2023.05.04 08:32:53 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 08:40:11 INFO  Started: Metals version 0.11.12 in workspace '/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query' for client Visual Studio Code 1.77.1.
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/.metals/metals (H2 2.1)
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.018s)
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 04, 2023 8:40:11 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.04 08:40:11 INFO  time: initialize in 0.22s
+2023.05.04 08:40:12 INFO  Attempting to connect to the build server...
+2023.05.04 08:40:12 INFO  Bloop uses /home/gridexx/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10 defined at /home/gridexx/.bloop/bloop.json
+2023.05.04 08:40:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/.metals/bsp.trace.json or /home/gridexx/.cache/metals/bsp.trace.json
+2023.05.04 08:40:12 INFO  time: Connected to build server in 0.35s
+2023.05.04 08:40:12 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.04 08:40:14 INFO  time: indexed workspace in 1.45s
+2023.05.04 08:40:14 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/controllers/InventoryController.java
+2023.05.04 08:40:14 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/controllers/InventoryController.java
+2023.05.04 08:41:53 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/controllers/InventoryController.java
+2023.05.04 08:42:21 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/messages/InventoryMessage.java
+2023.05.04 08:42:39 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/configs/RabbitMqConfig.java
+May 04, 2023 8:42:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 75
+2023.05.04 08:43:20 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/configs/RabbitMqConfig.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1265)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(null)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+May 04, 2023 8:43:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:102)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:149)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:157)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1795)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.05.04 08:43:20 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/configs/RabbitMqConfig.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1780)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1778)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2023.05.04 08:43:20 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/configs/RabbitMqConfig.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1780)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1778)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+May 04, 2023 8:44:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 324
+May 04, 2023 8:44:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 421
+May 04, 2023 8:45:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 458
+2023.05.04 08:45:43 WARN  Using indexes to guess the definition of ConnectionFactory
+2023.05.04 08:46:07 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/configs/RabbitMqConfig.java
+2023.05.04 08:46:10 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 08:46:11 WARN  Running javac-semanticdb failed for file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java. Output:
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:6: error: package org.slf4j does not exist
+import org.slf4j.Logger;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:7: error: package org.slf4j does not exist
+import org.slf4j.LoggerFactory;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:8: error: package org.springframework.amqp.rabbit.core does not exist
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:9: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:10: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Component;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:12: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:14: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:15: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:16: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:17: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:18: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:19: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:20: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:21: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ProductItem;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:22: error: package fr.dopolytech.polyshop.inventory.models does not exist
+import fr.dopolytech.polyshop.inventory.models.Inventory;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:23: error: package fr.dopolytech.polyshop.inventory.repositories does not exist
+import fr.dopolytech.polyshop.inventory.repositories.InventoryRepository;
+                                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:25: error: package org.springframework.amqp.core does not exist
+import org.springframework.amqp.core.Queue;
+                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:27: error: cannot find symbol
+@Component
+ ^
+  symbol: class Component
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:30: error: cannot find symbol
+  private final RabbitTemplate rabbitTemplate;
+                ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:31: error: cannot find symbol
+  private final Queue inventoryCancelQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:32: error: cannot find symbol
+  private final Queue inventoryConfirmedQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:33: error: cannot find symbol
+  private final Queue paymentQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:34: error: cannot find symbol
+  private final InventoryRepository inventoryRepository;
+                ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:37: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                       ^
+  symbol:   class Logger
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                          ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                         ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                     ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                                                    ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+      InventoryRepository inventoryRepository) {
+      ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:49: error: cannot find symbol
+  public List<InventoryDto> findAll() {
+              ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:55: error: cannot find symbol
+  public InventoryDto findInventoryByProductId(String productId) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:63: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+                           ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:63: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:68: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+                                        ^
+  symbol:   class PutInventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:68: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:39: error: cannot find symbol
+  @Autowired
+   ^
+  symbol:   class Autowired
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:37: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                                       ^
+  symbol:   variable LoggerFactory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:50: error: cannot find symbol
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+                                                      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:56: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(productId);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:60: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+    inventoryRepository.save(new Inventory(inventory));
+                                 ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:69: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(id);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:71: error: cannot find symbol
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+      return new InventoryDto(inv);
+                 ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:76: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:87: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+      ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:87: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+                                ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+      ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+                                                                        ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:96: error: cannot find symbol
+        ProductItem product = inventoryMessage.products.get(i);
+        ^
+  symbol:   class ProductItem
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:98: error: cannot find symbol
+        Inventory optionalInventory = inventoryRepository.findByProductId(product.productId);
+        ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:100: error: cannot find symbol
+        ErrorMessage errorMessage = null;
+        ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:103: error: cannot find symbol
+          Inventory inventory = optionalInventory;
+          ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:117: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+            ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:117: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                                ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:125: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                               ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:125: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                                            ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:134: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:134: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                                          ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:144: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:144: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+                                                           ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:150: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:150: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                              ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:168: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:168: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+    ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+                                                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:172: error: cannot find symbol
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:1: error: 
+package fr.dopolytech.polyshop.inventory.services;
+^
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: boom
+	at com.sun.tools.javac.main.Main.compile(Main.java:559)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+Caused by: java.lang.RuntimeException: boom
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:76)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	... 5 more
+Caused by: com.sourcegraph.semanticdb_javac.CompilationUnitException: file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+Caused by: java.lang.NullPointerException
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:288)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:341)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:228)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:1987)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:271)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitMemberSelect(TreeScanner.java:346)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:240)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:1903)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:270)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:255)
+	at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1390)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:162)
+	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:918)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:144)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:199)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:800)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:173)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:120)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:550)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:85)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:64)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+May 04, 2023 8:46:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 635
+2023.05.04 08:47:02 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/CreateInventoryCommand.java
+May 04, 2023 8:56:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 695
+May 04, 2023 8:56:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 741
+2023.05.04 08:56:50 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/models/Inventory.java
+2023.05.04 08:59:41 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/CreateInventoryCommand.java
+2023.05.04 09:00:52 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/CreateInventoryCommand.java
+May 04, 2023 9:00:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 846
+2023.05.04 09:00:52 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/CreateInventoryCommand.java
+2023.05.04 09:00:57 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/CreateInventoryCommand.java
+2023.05.04 09:01:21 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/DeleteInventoryCommand.java
+May 04, 2023 9:01:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 907
+2023.05.04 09:01:50 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/DeleteInventoryCommand.java
+2023.05.04 09:02:01 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/UpdateInventoryCommand.java
+2023.05.04 09:04:01 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/events/UpdateInventoryCommand.java
+2023.05.04 09:05:33 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1490)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1265)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(null)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+May 04, 2023 9:05:33 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1490)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:102)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:147)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:157)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1795)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.05.04 09:05:33 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1490)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1780)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1778)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2023.05.04 09:05:33 WARN  Cannot tokenize Java file file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1490)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1780)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1778)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+May 04, 2023 9:05:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1155
+May 04, 2023 9:05:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1154
+May 04, 2023 9:05:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1158
+May 04, 2023 9:06:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1250
+May 04, 2023 9:06:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1251
+May 04, 2023 9:06:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1293
+May 04, 2023 9:07:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1470
+May 04, 2023 9:08:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1524
+2023.05.04 09:08:19 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/repositories/InventoryRepository.java
+2023.05.04 09:10:00 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/dto/InventoryDto.java
+2023.05.04 09:10:02 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/dto/InventoryDto.java
+2023.05.04 09:11:37 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 09:11:38 WARN  Running javac-semanticdb failed for file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java. Output:
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:6: error: package org.slf4j does not exist
+import org.slf4j.Logger;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:7: error: package org.slf4j does not exist
+import org.slf4j.LoggerFactory;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:8: error: package org.springframework.amqp.rabbit.core does not exist
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:9: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:10: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Component;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:12: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:14: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:15: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:16: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.CreateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:17: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:18: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:19: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:20: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:21: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:22: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ProductItem;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:23: error: package fr.dopolytech.polyshop.inventory.models does not exist
+import fr.dopolytech.polyshop.inventory.models.Inventory;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:24: error: package fr.dopolytech.polyshop.inventory.repositories does not exist
+import fr.dopolytech.polyshop.inventory.repositories.InventoryRepository;
+                                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:26: error: package org.springframework.amqp.core does not exist
+import org.springframework.amqp.core.Queue;
+                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:28: error: cannot find symbol
+@Component
+ ^
+  symbol: class Component
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:31: error: cannot find symbol
+  private final RabbitTemplate rabbitTemplate;
+                ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:32: error: cannot find symbol
+  private final Queue inventoryCancelQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:33: error: cannot find symbol
+  private final Queue inventoryConfirmedQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:34: error: cannot find symbol
+  private final Queue paymentQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:35: error: cannot find symbol
+  private final InventoryRepository inventoryRepository;
+                ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:38: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                       ^
+  symbol:   class Logger
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                          ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                         ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                     ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                                                    ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+      InventoryRepository inventoryRepository) {
+      ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:50: error: cannot find symbol
+  public List<InventoryDto> findAll() {
+              ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:56: error: cannot find symbol
+  public InventoryDto findInventoryByProductId(String productId) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+                           ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:69: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+                                        ^
+  symbol:   class PutInventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:69: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  @Autowired
+   ^
+  symbol:   class Autowired
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:38: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                                       ^
+  symbol:   variable LoggerFactory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:51: error: cannot find symbol
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+                                                      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:57: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(productId);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:61: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:65: error: cannot find symbol
+    inventoryRepository.save(new Inventory(inventory));
+                                 ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:70: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(id);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:73: error: cannot find symbol
+      return new InventoryDto(inv);
+                 ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:77: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+      ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+                                ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:89: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+      ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:89: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+                                                                        ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:97: error: cannot find symbol
+        ProductItem product = inventoryMessage.products.get(i);
+        ^
+  symbol:   class ProductItem
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:99: error: cannot find symbol
+        Inventory optionalInventory = inventoryRepository.findByProductId(product.productId);
+        ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:101: error: cannot find symbol
+        ErrorMessage errorMessage = null;
+        ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:104: error: cannot find symbol
+          Inventory inventory = optionalInventory;
+          ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:118: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+            ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:118: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                                ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:126: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                               ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:126: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                                            ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:135: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:135: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                                          ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:145: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:145: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+                                                           ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:151: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:151: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                              ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:170: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+    ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:170: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+                                                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:173: error: cannot find symbol
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:191: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:191: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:193: error: cannot find symbol
+      CreateInventoryCommand createCommand =  mapper.readValue(message, CreateInventoryCommand.class);
+      ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:193: error: cannot find symbol
+      CreateInventoryCommand createCommand =  mapper.readValue(message, CreateInventoryCommand.class);
+                                                                        ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:195: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:195: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+                                                              ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:1: error: 
+package fr.dopolytech.polyshop.inventory.services;
+^
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: boom
+	at com.sun.tools.javac.main.Main.compile(Main.java:559)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+Caused by: java.lang.RuntimeException: boom
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:76)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	... 5 more
+Caused by: com.sourcegraph.semanticdb_javac.CompilationUnitException: file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+Caused by: java.lang.NullPointerException
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:288)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:341)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:228)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:1987)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:271)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitMemberSelect(TreeScanner.java:346)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:240)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:1903)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:270)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:255)
+	at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1390)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:162)
+	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:918)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:144)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:199)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:800)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:173)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:120)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:550)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:85)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:64)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+2023.05.04 09:11:38 INFO  time: code lens generation in 1.2s
+2023.05.04 09:11:38 INFO  time: code lens generation in 1.21s
+May 04, 2023 9:11:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1828
+May 04, 2023 9:11:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1860
+2023.05.04 09:12:35 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 09:12:37 WARN  Running javac-semanticdb failed for file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java. Output:
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:6: error: package org.slf4j does not exist
+import org.slf4j.Logger;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:7: error: package org.slf4j does not exist
+import org.slf4j.LoggerFactory;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:8: error: package org.springframework.amqp.rabbit.core does not exist
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:9: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:10: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Component;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:12: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:14: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:15: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:16: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.CreateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:17: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:18: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:19: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:20: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:21: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:22: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ProductItem;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:23: error: package fr.dopolytech.polyshop.inventory.models does not exist
+import fr.dopolytech.polyshop.inventory.models.Inventory;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:24: error: package fr.dopolytech.polyshop.inventory.repositories does not exist
+import fr.dopolytech.polyshop.inventory.repositories.InventoryRepository;
+                                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:26: error: package org.springframework.amqp.core does not exist
+import org.springframework.amqp.core.Queue;
+                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:28: error: cannot find symbol
+@Component
+ ^
+  symbol: class Component
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:31: error: cannot find symbol
+  private final RabbitTemplate rabbitTemplate;
+                ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:32: error: cannot find symbol
+  private final Queue inventoryCancelQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:33: error: cannot find symbol
+  private final Queue inventoryConfirmedQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:34: error: cannot find symbol
+  private final Queue paymentQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:35: error: cannot find symbol
+  private final InventoryRepository inventoryRepository;
+                ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:38: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                       ^
+  symbol:   class Logger
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                          ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                         ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                     ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+                                                                                                                    ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+      InventoryRepository inventoryRepository) {
+      ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:50: error: cannot find symbol
+  public List<InventoryDto> findAll() {
+              ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:56: error: cannot find symbol
+  public InventoryDto findInventoryByProductId(String productId) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+                           ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:69: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+                                        ^
+  symbol:   class PutInventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:69: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  @Autowired
+   ^
+  symbol:   class Autowired
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:38: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                                       ^
+  symbol:   variable LoggerFactory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:51: error: cannot find symbol
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+                                                      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:57: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(productId);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:61: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:65: error: cannot find symbol
+    inventoryRepository.save(new Inventory(inventory));
+                                 ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:70: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(id);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:73: error: cannot find symbol
+      return new InventoryDto(inv);
+                 ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:77: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+      ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:88: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+                                ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:89: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+      ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:89: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+                                                                        ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:97: error: cannot find symbol
+        ProductItem product = inventoryMessage.products.get(i);
+        ^
+  symbol:   class ProductItem
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:99: error: cannot find symbol
+        Inventory optionalInventory = inventoryRepository.findByProductId(product.productId);
+        ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:101: error: cannot find symbol
+        ErrorMessage errorMessage = null;
+        ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:104: error: cannot find symbol
+          Inventory inventory = optionalInventory;
+          ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:118: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+            ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:118: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                                ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:126: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                               ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:126: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                                            ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:135: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:135: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                                          ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:145: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:145: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+                                                           ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:151: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:151: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                              ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:169: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:170: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+    ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:170: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+                                                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:173: error: cannot find symbol
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:191: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:191: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:193: error: cannot find symbol
+      CreateInventoryCommand createCommand =  mapper.readValue(message, CreateInventoryCommand.class);
+      ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:193: error: cannot find symbol
+      CreateInventoryCommand createCommand =  mapper.readValue(message, CreateInventoryCommand.class);
+                                                                        ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:195: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:195: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+                                                              ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:1: error: 
+package fr.dopolytech.polyshop.inventory.services;
+^
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: boom
+	at com.sun.tools.javac.main.Main.compile(Main.java:559)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+Caused by: java.lang.RuntimeException: boom
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:76)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	... 5 more
+Caused by: com.sourcegraph.semanticdb_javac.CompilationUnitException: file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+Caused by: java.lang.NullPointerException
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:288)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:341)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:228)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:1987)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:271)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitMemberSelect(TreeScanner.java:346)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:240)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:1903)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:270)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:255)
+	at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1390)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:162)
+	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:918)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:144)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:199)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:800)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:173)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:120)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:550)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:85)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:64)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+2023.05.04 09:12:37 INFO  time: code lens generation in 1.16s
+2023.05.04 09:12:37 INFO  time: code lens generation in 1.16s
+May 04, 2023 9:12:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1956
+May 04, 2023 9:14:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2322
+May 04, 2023 9:15:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2394
+2023.05.04 09:15:44 WARN  Using indexes to guess the definition of getInventory
+2023.05.04 09:15:44 WARN  Using indexes to guess the definition of getInventory
+May 04, 2023 9:17:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2691
+May 04, 2023 9:18:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2803
+2023.05.04 09:18:12 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/models/Inventory.java
+2023.05.04 09:18:20 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/models/Inventory.java
+2023.05.04 09:18:22 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/models/Inventory.java
+2023.05.04 09:18:22 WARN  Using indexes to guess the definition of getInventory
+2023.05.04 09:18:22 WARN  Using indexes to guess the definition of getInventory
+2023.05.04 09:18:30 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 09:18:31 WARN  Running javac-semanticdb failed for file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java. Output:
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:6: error: package org.slf4j does not exist
+import org.slf4j.Logger;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:7: error: package org.slf4j does not exist
+import org.slf4j.LoggerFactory;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:8: error: package org.springframework.amqp.rabbit.core does not exist
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:9: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:10: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Component;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:12: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:14: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:15: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:16: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.CreateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:17: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.UpdateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:18: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:19: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:20: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:21: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:22: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:23: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ProductItem;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:24: error: package fr.dopolytech.polyshop.inventory.models does not exist
+import fr.dopolytech.polyshop.inventory.models.Inventory;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:25: error: package fr.dopolytech.polyshop.inventory.repositories does not exist
+import fr.dopolytech.polyshop.inventory.repositories.InventoryRepository;
+                                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:27: error: package org.springframework.amqp.core does not exist
+import org.springframework.amqp.core.Queue;
+                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:29: error: cannot find symbol
+@Component
+ ^
+  symbol: class Component
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:32: error: cannot find symbol
+  private final RabbitTemplate rabbitTemplate;
+                ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:33: error: cannot find symbol
+  private final Queue inventoryCancelQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:34: error: cannot find symbol
+  private final Queue inventoryConfirmedQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:35: error: cannot find symbol
+  private final Queue paymentQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:36: error: cannot find symbol
+  private final InventoryRepository inventoryRepository;
+                ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:39: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                       ^
+  symbol:   class Logger
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                          ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                                                         ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                                                                                     ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:43: error: cannot find symbol
+      Queue paymentQueue,
+      ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:44: error: cannot find symbol
+      InventoryRepository inventoryRepository) {
+      ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:52: error: cannot find symbol
+  public List<InventoryDto> findAll() {
+              ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:58: error: cannot find symbol
+  public InventoryDto findInventoryByProductId(String productId) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:66: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+                           ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:66: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:71: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+                                        ^
+  symbol:   class PutInventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:71: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:41: error: cannot find symbol
+  @Autowired
+   ^
+  symbol:   class Autowired
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:39: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                                       ^
+  symbol:   variable LoggerFactory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:53: error: cannot find symbol
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+                                                      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:59: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(productId);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:63: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:67: error: cannot find symbol
+    inventoryRepository.save(new Inventory(inventory));
+                                 ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(id);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:74: error: cannot find symbol
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:75: error: cannot find symbol
+      return new InventoryDto(inv);
+                 ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:79: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:90: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+      ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:90: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+                                ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:91: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+      ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:91: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+                                                                        ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:99: error: cannot find symbol
+        ProductItem product = inventoryMessage.products.get(i);
+        ^
+  symbol:   class ProductItem
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:101: error: cannot find symbol
+        Inventory optionalInventory = inventoryRepository.findByProductId(product.productId);
+        ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:103: error: cannot find symbol
+        ErrorMessage errorMessage = null;
+        ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:106: error: cannot find symbol
+          Inventory inventory = optionalInventory;
+          ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:120: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+            ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:120: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                                ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:128: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                               ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:128: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                                            ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:137: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:137: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                                          ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:147: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:147: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+                                                           ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:153: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:153: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                              ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:171: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:171: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:172: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+    ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:172: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+                                                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:175: error: cannot find symbol
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:192: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:192: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:194: error: cannot find symbol
+      CreateInventoryCommand createCommand = mapper.readValue(message, CreateInventoryCommand.class);
+      ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:194: error: cannot find symbol
+      CreateInventoryCommand createCommand = mapper.readValue(message, CreateInventoryCommand.class);
+                                                                       ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:196: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:197: error: cannot find symbol
+          .save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+                    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:208: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:208: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:211: error: cannot find symbol
+      UpdateInventoryCommand updateCommand = mapper.readValue(message, UpdateInventoryCommand.class);
+      ^
+  symbol:   class UpdateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:211: error: cannot find symbol
+      UpdateInventoryCommand updateCommand = mapper.readValue(message, UpdateInventoryCommand.class);
+                                                                       ^
+  symbol:   class UpdateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:212: error: cannot find symbol
+      InventoryDto getInventory = findInventoryByProductId(updateCommand.getId());
+      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:217: error: cannot find symbol
+      Inventory newInventory = new Inventory(updateCommand.getId(), updateCommand.getQuantity());
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:217: error: cannot find symbol
+      Inventory newInventory = new Inventory(updateCommand.getId(), updateCommand.getQuantity());
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:218: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(newInventory);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:1: error: 
+package fr.dopolytech.polyshop.inventory.services;
+^
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: boom
+	at com.sun.tools.javac.main.Main.compile(Main.java:559)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+Caused by: java.lang.RuntimeException: boom
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:76)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	... 5 more
+Caused by: com.sourcegraph.semanticdb_javac.CompilationUnitException: file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+Caused by: java.lang.NullPointerException
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:288)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:341)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:228)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:1987)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:271)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitMemberSelect(TreeScanner.java:346)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:240)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:1903)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:270)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:255)
+	at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1390)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:162)
+	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:918)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:144)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:199)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:800)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:173)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:120)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:550)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:85)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:64)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+2023.05.04 09:18:41 WARN  Using indexes to guess the definition of UpdateInventoryCommand
+May 04, 2023 9:18:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2948
+2023.05.04 09:19:39 WARN  Using indexes to guess the definition of UpdateInventoryCommand
+2023.05.04 09:21:03 WARN  no build target for: /home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+2023.05.04 09:21:05 WARN  Running javac-semanticdb failed for file:///home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java. Output:
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:6: error: package org.slf4j does not exist
+import org.slf4j.Logger;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:7: error: package org.slf4j does not exist
+import org.slf4j.LoggerFactory;
+                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:8: error: package org.springframework.amqp.rabbit.core does not exist
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:9: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:10: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Component;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:12: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:14: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:15: error: package fr.dopolytech.polyshop.inventory.dto does not exist
+import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+                                           ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:16: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.CreateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:17: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.DeleteInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:18: error: package fr.dopolytech.polyshop.inventory.events does not exist
+import fr.dopolytech.polyshop.inventory.events.UpdateInventoryCommand;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:19: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:20: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:21: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:22: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.MessageConfirmed;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:23: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.PaymentMessage;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:24: error: package fr.dopolytech.polyshop.inventory.messages does not exist
+import fr.dopolytech.polyshop.inventory.messages.ProductItem;
+                                                ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:25: error: package fr.dopolytech.polyshop.inventory.models does not exist
+import fr.dopolytech.polyshop.inventory.models.Inventory;
+                                              ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:26: error: package fr.dopolytech.polyshop.inventory.repositories does not exist
+import fr.dopolytech.polyshop.inventory.repositories.InventoryRepository;
+                                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:28: error: package org.springframework.amqp.core does not exist
+import org.springframework.amqp.core.Queue;
+                                    ^
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:30: error: cannot find symbol
+@Component
+ ^
+  symbol: class Component
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:33: error: cannot find symbol
+  private final RabbitTemplate rabbitTemplate;
+                ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:34: error: cannot find symbol
+  private final Queue inventoryCancelQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:35: error: cannot find symbol
+  private final Queue inventoryConfirmedQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:36: error: cannot find symbol
+  private final Queue paymentQueue;
+                ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:37: error: cannot find symbol
+  private final InventoryRepository inventoryRepository;
+                ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                       ^
+  symbol:   class Logger
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:43: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                          ^
+  symbol:   class RabbitTemplate
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:43: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                                                         ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:43: error: cannot find symbol
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+                                                                                     ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:44: error: cannot find symbol
+      Queue paymentQueue,
+      ^
+  symbol:   class Queue
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:45: error: cannot find symbol
+      InventoryRepository inventoryRepository) {
+      ^
+  symbol:   class InventoryRepository
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:53: error: cannot find symbol
+  public List<InventoryDto> findAll() {
+              ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:59: error: cannot find symbol
+  public InventoryDto findInventoryByProductId(String productId) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:67: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+                           ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:67: error: cannot find symbol
+  public InventoryDto save(InventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+                                        ^
+  symbol:   class PutInventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:72: error: cannot find symbol
+  public InventoryDto update(String id, PutInventoryDto inventory) {
+         ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:42: error: cannot find symbol
+  @Autowired
+   ^
+  symbol:   class Autowired
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:40: error: cannot find symbol
+  private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
+                                       ^
+  symbol:   variable LoggerFactory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:54: error: cannot find symbol
+    return inventoryRepository.findAll().stream().map(InventoryDto::new).collect(java.util.stream.Collectors.toList());
+                                                      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:60: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(productId);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:64: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:68: error: cannot find symbol
+    inventoryRepository.save(new Inventory(inventory));
+                                 ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:73: error: cannot find symbol
+    Inventory inv = inventoryRepository.findByProductId(id);
+    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:75: error: cannot find symbol
+      inventoryRepository.save(new Inventory(id, inventory.quantity));
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:76: error: cannot find symbol
+      return new InventoryDto(inv);
+                 ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:80: error: cannot find symbol
+    return new InventoryDto(inv);
+               ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:91: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+      ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:91: error: cannot find symbol
+      ObjectMapper mapper = new ObjectMapper();
+                                ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:92: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+      ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:92: error: cannot find symbol
+      InventoryMessage inventoryMessage = mapper.readValue(messageBody, InventoryMessage.class);
+                                                                        ^
+  symbol:   class InventoryMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:100: error: cannot find symbol
+        ProductItem product = inventoryMessage.products.get(i);
+        ^
+  symbol:   class ProductItem
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:102: error: cannot find symbol
+        Inventory optionalInventory = inventoryRepository.findByProductId(product.productId);
+        ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:104: error: cannot find symbol
+        ErrorMessage errorMessage = null;
+        ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:107: error: cannot find symbol
+          Inventory inventory = optionalInventory;
+          ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:121: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+            ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:121: error: cannot find symbol
+            PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                                ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:129: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                               ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:129: error: cannot find symbol
+            errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_QUANTITY_MISSING,
+                                            ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:138: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:138: error: cannot find symbol
+          errorMessage = new ErrorMessage(ErrorEnum.PRODUCT_NOT_FOUND, "Product id not found : " + product.productId,
+                                          ^
+  symbol:   variable ErrorEnum
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:148: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+          ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:148: error: cannot find symbol
+          MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
+                                                           ^
+  symbol:   class MessageConfirmed
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:154: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+          ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:154: error: cannot find symbol
+          PaymentMessage paymentMessage = new PaymentMessage(inventoryMessage.orderId, inventoryMessage.products);
+                                              ^
+  symbol:   class PaymentMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:172: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:172: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:173: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+    ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:173: error: cannot find symbol
+    ErrorMessage errorMessage = mapper.convertValue(message, ErrorMessage.class);
+                                                             ^
+  symbol:   class ErrorMessage
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:176: error: cannot find symbol
+      Inventory inventory = inventoryRepository.findByProductId(product.productId);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:194: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:194: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:196: error: cannot find symbol
+      CreateInventoryCommand createCommand = mapper.readValue(message, CreateInventoryCommand.class);
+      ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:196: error: cannot find symbol
+      CreateInventoryCommand createCommand = mapper.readValue(message, CreateInventoryCommand.class);
+                                                                       ^
+  symbol:   class CreateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:198: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:199: error: cannot find symbol
+          .save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+                    ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:211: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:211: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:214: error: cannot find symbol
+      UpdateInventoryCommand updateCommand = mapper.readValue(message, UpdateInventoryCommand.class);
+      ^
+  symbol:   class UpdateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:214: error: cannot find symbol
+      UpdateInventoryCommand updateCommand = mapper.readValue(message, UpdateInventoryCommand.class);
+                                                                       ^
+  symbol:   class UpdateInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:215: error: cannot find symbol
+      InventoryDto getInventory = findInventoryByProductId(updateCommand.getId());
+      ^
+  symbol:   class InventoryDto
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:220: error: cannot find symbol
+      Inventory newInventory = new Inventory(updateCommand.getId(), updateCommand.getQuantity());
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:220: error: cannot find symbol
+      Inventory newInventory = new Inventory(updateCommand.getId(), updateCommand.getQuantity());
+                                   ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:221: error: cannot find symbol
+      Inventory savedInventory = inventoryRepository.save(newInventory);
+      ^
+  symbol:   class Inventory
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:232: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+    ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:232: error: cannot find symbol
+    ObjectMapper mapper = new ObjectMapper();
+                              ^
+  symbol:   class ObjectMapper
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:235: error: cannot find symbol
+      DeleteInventoryCommand deleteCommand = mapper.readValue(message, DeleteInventoryCommand.class);
+      ^
+  symbol:   class DeleteInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:235: error: cannot find symbol
+      DeleteInventoryCommand deleteCommand = mapper.readValue(message, DeleteInventoryCommand.class);
+                                                                       ^
+  symbol:   class DeleteInventoryCommand
+  location: class InventoryService
+/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java:1: error: 
+package fr.dopolytech.polyshop.inventory.services;
+^
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: boom
+	at com.sun.tools.javac.main.Main.compile(Main.java:559)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+Caused by: java.lang.RuntimeException: boom
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:76)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	... 5 more
+Caused by: com.sourcegraph.semanticdb_javac.CompilationUnitException: file:/home/gridexx/Documents/Cours/Spring/Micro-services_new/inventory_query/src/main/java/fr/dopolytech/polyshop/inventory/services/InventoryService.java
+Caused by: java.lang.NullPointerException
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbRange(SemanticdbVisitor.java:288)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.semanticdbOccurrence(SemanticdbVisitor.java:341)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.emitSymbolOccurrence(SemanticdbVisitor.java:84)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:228)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberReference(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMemberReference.accept(JCTree.java:1987)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:271)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitMemberSelect(TreeScanner.java:346)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:240)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMemberSelect(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCFieldAccess.accept(JCTree.java:1903)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethodInvocation(TreeScanner.java:270)
+	at com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1477)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.visitReturn(TreeScanner.java:255)
+	at com.sun.tools.javac.tree.JCTree$JCReturn.accept(JCTree.java:1390)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:162)
+	at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:918)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:144)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:199)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitMethod(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:800)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:81)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:133)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:173)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.visitClass(SemanticdbVisitor.java:30)
+	at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:720)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sun.source.util.TreeScanner.scan(TreeScanner.java:91)
+	at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:99)
+	at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:120)
+	at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:550)
+	at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbVisitor.buildTextDocument(SemanticdbVisitor.java:68)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.onFinishedAnalyze(SemanticdbTaskListener.java:85)
+	at com.sourcegraph.semanticdb_javac.SemanticdbTaskListener.finished(SemanticdbTaskListener.java:64)
+	at com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:681)
+	at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:111)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1342)
+	at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1296)
+	at com.sun.tools.javac.main.JavaCompiler.compile2(JavaCompiler.java:901)
+	at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:860)
+	at com.sun.tools.javac.main.Main.compile(Main.java:523)
+	at com.sun.tools.javac.main.Main.compile(Main.java:381)
+	at com.sun.tools.javac.main.Main.compile(Main.java:370)
+	at com.sun.tools.javac.main.Main.compile(Main.java:361)
+	at com.sun.tools.javac.Main.compile(Main.java:56)
+	at com.sun.tools.javac.Main.main(Main.java:42)
+2023.05.04 09:21:05 INFO  time: code lens generation in 1.48s
+2023.05.04 09:21:05 INFO  time: code lens generation in 1.48s
+2023.05.04 09:56:17 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:17 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:17 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:17 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:17 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:18 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:18 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:18 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.05.04 09:56:19 INFO  time: code lens generation in 3.49s

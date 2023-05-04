@@ -45,6 +45,21 @@ public class RabbitMqConfig {
     return new Queue("payment_cancel", false);
   }
 
+  // Queue used to listen for the inventory_command service
+  @Bean
+  public Queue inventoryCommandUpdateQueue() {
+    return new Queue("inventory_command_update", false);
+  }
+
+  @Bean
+  public Queue inventoryCommandCreateQueue() {
+    return new Queue("inventory_command_create", false);
+  }
+  @Bean
+  public Queue inventoryCommandDeleteQueue() {
+    return new Queue("inventory_command_delete", false);
+  }
+
   @Bean
   public MessageListenerAdapter listenerAdapter(InventoryService inventoryService) {
     return new MessageListenerAdapter(inventoryService, "receiveMessage");
@@ -72,6 +87,49 @@ public class RabbitMqConfig {
     container.setConnectionFactory(connectionFactory);
     container.setQueueNames("payment_cancel");
     container.setMessageListener(listenerAdapterCancel);
+    return container;
+  }
+
+  @Bean
+  public MessageListenerAdapter listenerAdapterCommandUpdate(InventoryService inventoryService) {
+    return new MessageListenerAdapter(inventoryService, "receiveMessageCommandUpdate");
+  }
+
+  @Bean
+  public SimpleMessageListenerContainer containerCommandUpdate(ConnectionFactory connectionFactory,
+      MessageListenerAdapter listenerAdapterCommandUpdate) {
+    SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
+    container.setConnectionFactory(connectionFactory);
+    container.setQueueNames(inventoryCommandUpdateQueue().getName());
+    container.setMessageListener(listenerAdapterCommandUpdate);
+    return container;
+  }
+  @Bean
+  public MessageListenerAdapter listenerAdapterCommandCreate(InventoryService inventoryService) {
+    return new MessageListenerAdapter(inventoryService, "receiveMessageCommandCreate");
+  }
+
+  @Bean
+  public SimpleMessageListenerContainer containerCommandCreate(ConnectionFactory connectionFactory,
+      MessageListenerAdapter listenerAdapterCommandCreate) {
+    SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
+    container.setConnectionFactory(connectionFactory);
+    container.setQueueNames(inventoryCommandCreateQueue().getName());
+    container.setMessageListener(listenerAdapterCommandCreate);
+    return container;
+  }
+  @Bean
+  public MessageListenerAdapter listenerAdapterCommandDelete(InventoryService inventoryService) {
+    return new MessageListenerAdapter(inventoryService, "receiveMessageCommandDelete");
+  }
+
+  @Bean
+  public SimpleMessageListenerContainer containerCommandDelete(ConnectionFactory connectionFactory,
+      MessageListenerAdapter listenerAdapterCommandDelete) {
+    SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
+    container.setConnectionFactory(connectionFactory);
+    container.setQueueNames(inventoryCommandDeleteQueue().getName());
+    container.setMessageListener(listenerAdapterCommandDelete);
     return container;
   }
 }

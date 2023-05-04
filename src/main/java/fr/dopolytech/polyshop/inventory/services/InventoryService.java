@@ -13,6 +13,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import fr.dopolytech.polyshop.inventory.dto.InventoryDto;
 import fr.dopolytech.polyshop.inventory.dto.PutInventoryDto;
+import fr.dopolytech.polyshop.inventory.events.CreateInventoryCommand;
+import fr.dopolytech.polyshop.inventory.events.DeleteInventoryCommand;
+import fr.dopolytech.polyshop.inventory.events.UpdateInventoryCommand;
 import fr.dopolytech.polyshop.inventory.messages.ErrorEnum;
 import fr.dopolytech.polyshop.inventory.messages.ErrorMessage;
 import fr.dopolytech.polyshop.inventory.messages.InventoryMessage;
@@ -37,7 +40,8 @@ public class InventoryService {
   private static final Logger logger = LoggerFactory.getLogger(InventoryService.class);
 
   @Autowired
-  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue, Queue paymentQueue,
+  public InventoryService(RabbitTemplate rabbitTemplate, Queue inventoryCancelQueue, Queue inventoryConfirmedQueue,
+      Queue paymentQueue,
       InventoryRepository inventoryRepository) {
     this.rabbitTemplate = rabbitTemplate;
     this.inventoryCancelQueue = inventoryCancelQueue;
@@ -54,7 +58,7 @@ public class InventoryService {
 
   public InventoryDto findInventoryByProductId(String productId) {
     Inventory inv = inventoryRepository.findByProductId(productId);
-    if(inv == null) {
+    if (inv == null) {
       return null;
     }
     return new InventoryDto(inv);
@@ -67,7 +71,7 @@ public class InventoryService {
 
   public InventoryDto update(String id, PutInventoryDto inventory) {
     Inventory inv = inventoryRepository.findByProductId(id);
-    if(inv == null) {
+    if (inv == null) {
       inventoryRepository.save(new Inventory(id, inventory.quantity));
       return new InventoryDto(inv);
     }
@@ -143,7 +147,7 @@ public class InventoryService {
         } else {
           MessageConfirmed inventoryConfirmedMessage = new MessageConfirmed(inventoryMessage.orderId);
           String messageConfirmedString = mapper.writeValueAsString(inventoryConfirmedMessage);
-          logger.info("Send a message to the inventory confirmed queue" );
+          logger.info("Send a message to the inventory confirmed queue");
           rabbitTemplate.convertAndSend(inventoryConfirmedQueue.getName(), messageConfirmedString);
 
           // Send message to payment queue
@@ -179,9 +183,60 @@ public class InventoryService {
         logger.error("Product id not found : " + product.productId);
       }
     });
-    
+
     // Just transmit the message to the inventory cancel queue
     rabbitTemplate.convertAndSend(inventoryCancelQueue.getName(), message);
+  }
+
+  // Receive message from the Command service
+  public void receiveMessageCommandCreate(String message) {
+    logger.info("Receive create command: {}", message);
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+      CreateInventoryCommand createCommand = mapper.readValue(message, CreateInventoryCommand.class);
+
+      Inventory savedInventory = inventoryRepository
+          .save(new Inventory(createCommand.getId(), createCommand.getQuantity()));
+      if (savedInventory == null) {
+        logger.error("Error while saving inventory");
+      }
+    } catch (Exception e) {
+      logger.error("Error while converting create Command to JSON", e);
+    }
+
+  }
+
+  public void receiveMessageCommandUpdate(String message) {
+    logger.info("Receive update command: {}", message);
+    ObjectMapper mapper = new ObjectMapper();
+
+    try {
+      UpdateInventoryCommand updateCommand = mapper.readValue(message, UpdateInventoryCommand.class);
+      InventoryDto getInventory = findInventoryByProductId(updateCommand.getId());
+      if (getInventory == null) {
+        logger.error("Error while getting inventory witn id {}", updateCommand.getId());
+        return;
+      }
+      Inventory newInventory = new Inventory(updateCommand.getId(), updateCommand.getQuantity());
+      Inventory savedInventory = inventoryRepository.save(newInventory);
+      if (savedInventory == null) {
+        logger.error("Error while saving inventory");
+      }
+    } catch (Exception e) {
+      logger.error("Error while converting update Command to JSON", e);
+    }
+  }
+
+  public void receiveMessageCommandDelete(String message) {
+    logger.info("Receive delete command: {}", message);
+    ObjectMapper mapper = new ObjectMapper();
+
+    try {
+      DeleteInventoryCommand deleteCommand = mapper.readValue(message, DeleteInventoryCommand.class);
+      inventoryRepository.deleteByProductId(deleteCommand.getId());
+    } catch (Exception e) {
+      logger.error("Error while converting update Command to JSON", e);
+    }
   }
 
 }

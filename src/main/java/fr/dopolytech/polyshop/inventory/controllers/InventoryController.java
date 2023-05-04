@@ -44,21 +44,4 @@ public class InventoryController {
     return ResponseEntity.ok(inv);
   }
 
-  @PostMapping(consumes = "application/json")
-  @ResponseStatus(code = HttpStatus.CREATED)
-  public InventoryDto addInventory(@RequestBody InventoryDto inventory) {
-    return inventoryService.save(inventory);
-  }
-
-  @PutMapping(value = "/{id}", consumes = "application/json")
-  public ResponseEntity<InventoryDto> updateInventory(@PathVariable("id") String id, @RequestBody PutInventoryDto putInventoryDto) {
-    InventoryDto inv = inventoryService.update(id, putInventoryDto);
-    return ResponseEntity.ok(inv);
-  }
-
-  @DeleteMapping(value = "/{id}")
-  @ResponseStatus(code = HttpStatus.NO_CONTENT)
-  public void deleteInventory(@PathVariable("id") String id) {
-    inventoryService.deleteByProductId(id);
-  }
 }
